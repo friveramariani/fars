@@ -1,4 +1,4 @@
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/friveramariani/fars?branch=master&svg=true)](https://ci.appveyor.com/project/friveramariani/fars)[![Travis-CI Build Status](https://travis-ci.org/friveramariani/fars.svg?branch=master)](https://travis-ci.org/friveramariani/fars)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/friveramariani/fars?branch=master&svg=true)](https://ci.appveyor.com/project/friveramariani/fars)
 
 
 # fars Package
