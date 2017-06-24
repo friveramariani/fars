@@ -1,0 +1,45 @@
+---
+title: "fars Vignette"
+author: "Felix E. Rivera-Mariani, PhD"
+date: "June 23, 2017"
+output: html_vignette
+---
+
+The fars packages enables the analysis of datasets from the United States National Highway Traffic Safety Administration (NHTSA). The datasets are part of the NHTSA Fatal Analysis Reporting System. 
+
+This packages is available on Github. The commands below can be used for installation.
+
+```{r, eval=FALSE}
+devtools::install_github("https://github.com/friveramariani/fars")
+library(countytimezones)
+```
+
+The 3 functions below can be used for the analysis:
+
+- fars_read()
+- summarize_years()
+- fars_map_state()
+
+The "fars_read()" function reads the accidents' csv file and generate a tibble file, which can then be used to analyse the data with R functions.
+
+```{r, eval=FALSE}
+data <- fars_read(filename = "./accident_2013.csv.bz2")
+```
+
+The "summarize_years()" function generates a summary output of the accidents per year(s) for each corresponding month.
+
+```{r, eval=FALSE}
+summarize_years<-fars_summarize_years(years=2013:2015)
+```
+
+The "fars_map_state()" function enable visualizing the map location, by state and year, of accidents.
+
+```{r, eval=FALSE}
+fars_map_state(40, 2014)
+```
+
+The 2013 to 2015 accidents datasets are available in the package "inst/extdata".
+
+
+
+
